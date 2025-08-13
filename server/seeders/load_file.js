@@ -4,7 +4,7 @@ import csv from 'csv-parser';
 import { pool } from "../conexion_db.js";
 
 export async function loadCustomers() {
-    const filePath = path.resolve('server/data/01-customers.csv');
+    const filePath = path.resolve('server/data/customers.csv');
     const customerss = [];
     return new Promise((resolve, reject) => {
         fs.createReadStream(filePath)
@@ -36,9 +36,9 @@ export async function loadCustomers() {
         });     
     });
 }
-
+// funtion for loads 
 export async function loadPlataforms(){
-    const filePath = path.resolve('server/data/02-platforms.csv');
+    const filePath = path.resolve('server/data/platforms.csv');
     const platforms = [];
     return new Promise((resolve, reject) => {
         fs.createReadStream(filePath)
@@ -68,7 +68,7 @@ export async function loadPlataforms(){
 }
 
 export async function loadInvoices() {
-    const filePath = path.resolve('server/data/03-invoices.csv');
+    const filePath = path.resolve('server/data/invoices.csv');
     const invoices = [];
     return new Promise((resolve, reject) => {
         fs.createReadStream(filePath)
@@ -102,7 +102,7 @@ export async function loadInvoices() {
 }
 
 export async function loadTransactions() {
-    const filePath = path.resolve('server/data/04-transacciones.csv');
+    const filePath = path.resolve('server/data/transacciones.csv');
     const transactions= [];
     return new Promise((resolve, reject) => {
         fs.createReadStream(filePath)
