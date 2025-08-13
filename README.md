@@ -41,7 +41,7 @@ Follow these steps to get your development environment set up:
 
 1.  **Set up the Database:**
     - Connect to your MySQL server.
-    - Create a new database for the project. The original Spanish README suggests the name `gestion_de_base_datos`.
+    - Create a new database for the project. The original Spanish README suggests the name `prueba_de_base_datos`.
       ```sql
       CREATE DATABASE gestion_de_base_datos;
       ```
